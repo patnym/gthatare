@@ -41,3 +41,18 @@ top: 0;
     bottom: -15%;
   }
 }
+.shame {
+  -webkit-animation: linear infinite alternate;
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 5s;
+}
+@-webkit-keyframes zoom {
+  0% {
+    width: 25%;
+    height: 25%;
+  }
+  100% {
+    width: 50%;
+    height: 50%;
+  }
+}
