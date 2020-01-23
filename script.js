@@ -35,7 +35,35 @@ function setInitialHateIndex() {
 function setUpdatedHateIndexes() {
   const newHateIndexes = updateHateIndex(currentHateIndexes);
   setHateIndex(newHateIndexes);
+  move(newHateIndexes, 0);
+  move(newHateIndexes, 1);
+  move(newHateIndexes, 2);
+  catsopatsotimeu();
+
 }
 
 setInitialHateIndex();
 setInterval(setUpdatedHateIndexes, 1000);
+
+function cat(cat) {
+   var result           = '';
+   var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+   var charactersLength = characters.length;
+   for ( var i = 0; i < cat; i++ ) {
+      result += characters.charAt(Math.floor(Math.random() * charactersLength));
+   }
+   return result;
+}
+
+function move(newHateIndexes, id) {
+    var elem = document.getElementById('bar-' + id +'').style;
+        elem.width = newHateIndexes[id] + "%";
+        elem.backgroundColor = "rgb(" + Math.floor(Math.random() * 255) +"," + Math.floor(Math.random() * 255) + "," +  Math.floor(Math.random() * 255) +")";
+}
+
+function catsopatsotimeu(){
+  var catt = document.getElementById('cat');
+  const catcat = Math.floor(Math.random() * 255);
+  catt.textContent = cat(1);
+  catt.style.color = "rgb(" + Math.floor(Math.random() * 255) +"," + Math.floor(Math.random() * 255) + "," +  Math.floor(Math.random() * 255) +")";
+}
