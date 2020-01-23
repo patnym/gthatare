@@ -71,3 +71,17 @@ h1 {
     transform: rotateZ(360deg);
   }
 }
+
+.gbg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 15%;
+  -webkit-animation: linear infinite alternate;
+  -webkit-animation-name: run;
+  -webkit-animation-duration: 10s;
+}
+
+.gbg-container {
+  animation: spin 2s linear infinite;
+}
