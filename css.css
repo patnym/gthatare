@@ -69,7 +69,8 @@ h2 {
 
 #bar-0,
 #bar-1,
-#bar-2 {
+#bar-2,
+#bar-3 {
   width: 0%;
   height: 10px;
   background-color: orange;
@@ -184,4 +185,40 @@ p {
 
 .gbg-container {
   animation: spin 2s linear infinite;
+}
+
+.rgk {
+  width: 100px;
+  height: 400px;
+  position: absolute;
+  left: 0;
+  border: 50px solid #5598ff;
+  border-style: ridge;
+  box-shadow: 50px 50px 16px 3px #666363;
+  animation: doFunThingsWithImage 20s linear infinite;
+}
+
+@keyframes doFunThingsWithImage {
+  0% {
+    filter: invert(100%);
+  }
+  20% {
+    filter: saturate(70);
+  }
+  40% {
+    filter: sepia(100%);
+  }
+  60% {
+    filter: hue-rotate(180deg);
+  }
+  80% {
+    filter: contrast(180%);
+  }
+  100% {
+    filter: blur(50px);
+  }
+}
+
+.ä {
+  font-size: 36px;
 }
