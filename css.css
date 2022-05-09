@@ -113,6 +113,18 @@ p {
   -webkit-animation-duration: 5s;
   z-index: 10;
 }
+
+.mikke {
+  top: 15%;
+  position: absolute;
+  -webkit-animation: linear infinite alternate;
+  -webkit-animation-name: run;
+  -webkit-animation-duration: 3s;
+  z-index: 10;
+  height: 200px;
+  width: 200px;
+}
+
 .gt {
   left: 0;
   position: absolute;

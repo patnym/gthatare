@@ -13,6 +13,9 @@ function setHateIndex(veryRandomGtArray) {
   document.getElementById(
     "gt-hater4"
   ).textContent = veryRandomGtArray[3].toString();
+  document.getElementById(
+    "gt-hater5"
+  ).textContent = veryRandomGtArray[3].toString();
 }
 
 function getInitialHateIndex() {
@@ -20,8 +23,9 @@ function getInitialHateIndex() {
   const gtRandom2 = Math.floor(Math.random() * 100);
   const gtRandom3 = Math.floor(Math.random() * 100);
   const gtRandom4 = Math.floor(Math.random() * 100);
-  currentHateIndexes = [gtRandom1, gtRandom2, gtRandom3, gtRandom4];
-  return [gtRandom1, gtRandom2, gtRandom3, gtRandom4];
+  const gtRandom5 = Math.floor(Math.random() * 100);
+  currentHateIndexes = [gtRandom1, gtRandom2, gtRandom3, gtRandom4, gtRandom5];
+  return [gtRandom1, gtRandom2, gtRandom3, gtRandom4, gtRandom5];
 }
 
 function updateHateIndex(hateIndexes) {
@@ -30,6 +34,7 @@ function updateHateIndex(hateIndexes) {
   newHateIndexes[1] = hateIndexes[1] + Math.floor(Math.random() * 30);
   newHateIndexes[2] = hateIndexes[2] + Math.floor(Math.random() * 30);
   newHateIndexes[3] = hateIndexes[3] + Math.floor(Math.random() * 30);
+  newHateIndexes[4] = hateIndexes[4] + Math.floor(Math.random() * 30);
   return newHateIndexes;
 }
 
@@ -44,6 +49,7 @@ function setUpdatedHateIndexes() {
   move(newHateIndexes, 1);
   move(newHateIndexes, 2);
   move(newHateIndexes, 3);
+  move(newHateIndexes, 4);
   catsopatsotimeu();
 }
 
